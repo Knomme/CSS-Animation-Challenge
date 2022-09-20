@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    animation: ani1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani1 {
+    0% {top: -200px;}
+    100% {top: 0px;}
+}
+
+#yellow {
+    opacity: 0;
+    background-color: yellow;
+    position: relative;
+    animation: ani2;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani2 {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+}
+
+#green {
+    background-color: green;
+    position: relative;
+    animation: ani3;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ani3 {
+    0% {transform: rotateY(360deg);}
+}
+
+/*HINT -   transform: rotateY(0deg);*/
